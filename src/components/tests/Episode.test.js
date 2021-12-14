@@ -31,15 +31,19 @@ test("renders without error", () => {
 
 test("renders the summary test passed as prop", ()=>{
     render(<Episode episode={testEpisode}/>);
+    const summary = screen.queryByText(/This episode is about/i);
+    expect(summary).toBeInTheDocument();
+    expect(summary).toBeTruthy();
+    expect(summary).toHaveTextContent("This episode is about");
 
-    const summary = screen.queryAllByText(/This episode is about/i);
-
-    expect(summary).toHaveLength(1);
+      
 
 });
 
 test("renders default image when image is not defined", ()=>{
     render(<Episode episode={testImgEpisode}/>);
+    const img = screen.queryByAltText('https://i.ibb.co/2FsfXqM/stranger-things.png')
+    expect(img).toBeInTheDocument();
     
 });
 
