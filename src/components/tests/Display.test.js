@@ -23,39 +23,39 @@ test('renders without errors with no props', ()=>{
 });
 
 test('renders Show component when the button is clicked ', ()=>{
-    //mockFetchShow.mockResolvedValueOnce(show);
-    //render(<Display />);
-   //const button = screen.getByRole("button");
+   //mockFetchShow.mockResolvedValueOnce(show);
+  //render(<Display show={show} />);
+   // const button = screen.getByRole("button");
    // userEvent.click(button);
 
     //const component = await screen.findByTestId("show-container");
 
-   //expect(component).toBeInTheDocument();
+  // expect(component).toBeInTheDocument();
 });
+
+test('renders show season options matching your data when the button is clicked', ()=>{
+  //  mockFetchShow.mockResolvedValueOnce(show);
+   // render(<Display />);
+
+   //const button = screen.getByRole("button");
+   //userEvent.click(button);
+
+//    await waitFor(() => {
+  //  const options = screen.queryAllByTestId("season-option");
+  //  expect(options).toHaveLength(4);
+  //  });
+   });
 
 test('renders show season options matching your data when the button is clicked', ()=>{
    // mockFetchShow.mockResolvedValueOnce(show);
-    //render(<Display />);
-
-   //const button = screen.getByRole("button");
-    //userEvent.click(button);
-
-   // await waitFor(() => {
-    //const options = screen.queryAllByTestId("season-option");
-    //expect(options).toHaveLength(4);
-  //});
-});
-
-test('renders show season options matching your data when the button is clicked', ()=>{
-    //mockFetchShow.mockResolvedValueOnce(show);
-    //render(<Display />);
-    //const displayFunc = jest.fn()
+   
+   // const displayFunc = jest.fn()
 
     //render(<Display displayFunc={displayFunc} />);
     //const button = screen.getByRole("button");
     //userEvent.click(button);
 
-    //await waitFor(() => {
+   // await waitFor(() => {
     //expect(displayFunc).toHaveBeenCalled();
-  //});
-});
+    //});
+    });
